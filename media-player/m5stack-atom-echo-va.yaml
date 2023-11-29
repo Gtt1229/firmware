@@ -147,12 +147,10 @@ script:
                     - voice_assistant.is_running
                 then:
                   - voice_assistant.start_continuous
-            - script.execute: reset_led
   - id: turn_off_wake_word
     then:
       - voice_assistant.stop
       - lambda: id(va).set_use_wake_word(false);
-      - script.execute: reset_led
       
 switch:
   - platform: template
