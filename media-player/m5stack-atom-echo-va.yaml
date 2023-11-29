@@ -156,7 +156,7 @@ script:
       - voice_assistant.stop
       - lambda: id(va).set_use_wake_word(false);
       
-    - id: reset_led
+  - id: reset_led
     then:
       - if:
           condition:
