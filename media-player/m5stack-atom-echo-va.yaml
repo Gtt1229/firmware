@@ -63,7 +63,7 @@ voice_assistant:
         blue: 0%
         red: 20%
         green: 100%
-        effect: Fast Pulse
+        effect: Slow Pulse
   on_end:
     - delay: 100ms
     - wait_until:
