@@ -55,7 +55,7 @@ voice_assistant:
         red: 0%
         green: 0%
         brightness: 100%
-        effect: pulse
+        effect: Slow Pulse
   on_tts_end:
     - media_player.play_media: !lambda return x;
     - light.turn_on:
@@ -63,7 +63,7 @@ voice_assistant:
         blue: 0%
         red: 20%
         green: 100%
-        effect: pulse
+        effect: Fast Pulse
   on_end:
     - delay: 100ms
     - wait_until:
